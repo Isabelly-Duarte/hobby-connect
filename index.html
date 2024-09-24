@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>HobbyConnect</title>
   <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https:/maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/hobby.css">
 </head>
 
@@ -17,11 +18,16 @@
       <div class="row">
         <nav id="menu">
           <ul>
-            <li>Inicio</li>
-            <li>Conectar</li>
-            <li>Ajuda</li>
-            <li>
-              <input type="search" placeholder="pesquisar">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Conectar</a></li>
+            <li><a href="#">Ajuda</a></li>
+            <li class="Pesquisar">
+              <div class="input-group">
+                <input type="text" class="form-control"  placeholder="Pesquisar..." id="input-Pesquisar">
+                <span class="input-group-btn">
+                  <button class="btn btn-default" type="button"><i class="fa fa-search"></i></button>
+                </span>
+              </div>
             </li>
           </ul>
         </nav>
@@ -30,10 +36,78 @@
 
   </header>
 
-  <div class="image-fundo"></div>
+  <div class="image-fundo">
+    <section>
+      <div id="introducao">
+        <h1>Acreditamos que a verdadeira magia acontece quando pessoas com interesses em comum se encontram. Este site é
+          o
+          seu ponto de partida para explorar e se conectar com indivíduos que compartilham suas paixões e curiosidades.
+          Seja você um entusiasta de livros, tecnologia, arte ou esportes, temos um lugar para você!
+        </h1>
+        <img id="book" src="img/Book lover-bro.png">
+      </div>
 
-  <script src="lib/jquery/jquery-3.7.1.min.js"></script>
-  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    </section>
+    <footer>
+      <div id="row-cinza-claro" class="row">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-2 text-center">
+              <img id="img-musica" src="img/Music-amico.png">
+            </div>
+            <div class="col-md-10 col-red">
+              <div class="row">
+                <div class="col-md-4 col-sobre-nos">
+                  <h4>SOBRE NÓS</h4>
+                  <ul>
+                    <li>
+                      <h5>Nossos projetos</h5>
+                      <h5>Carreiras</h5>
+                      <h5>Proteção de dados</h5>
+                      <h5>Termos e condições</h5>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-4 col-parceiros">
+                  <h4>PARCEIROS</h4>
+                  <ul>
+                    <li>
+                      <h5>Sites</h5>
+                      <h5>Redes Sociais</h5>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-4 col-ajuda">
+                  <h4>AJUDA</h4>
+                  <ul>
+                    <li>
+                      <h5>Atendimento ao cliente</h5>
+                      <h5>Contato</h5>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-4"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div id="row-cinza-escuro" class="row">
+        <div id="text-roxo" class="container">
+          <p class="pull-left">copyrigh @ HobbyConnect 2024.all rigths reserved.</p>
+          <p class="pull-rigth">created by Isabelly</p>
+        </div>
+      </div>
+    </footer>
+    <script src="lib/jquery/jquery-3.7.1.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script>
+      $("#input-Pesquisar").on("focus", function () {
+        $("li.Pesquisar").addClass("ativo");
+      }).on("blur", function(){
+        $("li.Pesquisar").removeClass("ativo");
+      });
+    </script>
 </body>
-
 </htlm>

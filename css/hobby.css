@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'opensans';
+    src: url("../fonts/opensans/OpenSans-Italic-VariableFont_wdth,wght.ttf");
+    font-size: 1em;
+}
+
+
 header {
     width: 100%;
     height: 100px;
@@ -10,23 +17,163 @@ body .container {
 }
 
 header #logotipo {
-    position: absolute;
-    width: 20%;
-    height: 150px;
-    margin-top: -30px;
+    position: relative;
+    width: 25%;
+    height: 125px;
+    margin-top: 20px;
 
 }
 
 .image-fundo {
-    background-color: #fdfbf5;
+    background-color: #f4e4eb;
     height: 98vh;
-    width: 98.5vw;
+    width: 100%;
+}
+
+#menu {
+    margin: 26px 0;
 }
 
 #menu li {
     display: inline-block;
+    font-family: "opensans";
+   
 }
 
-#row {
-    float: right;
+#menu li.Pesquisar {
+    width: 200px;
+    transition: 1s; 
+}
+#menu li.Pesquisar.ativo{
+    width: 300px;
+    
+}
+#menu li.Pesquisar input {
+    background-color: rgb(109, 146, 232);
+    color: black;
+    border: none;
+    height: 30px;
+}
+
+#menu li.search button {
+    background: none;
+    border: none;
+    color: rgba(246, 201, 225, 0.897);
+}
+
+#menu li.search button i {
+    font-size: 14px;
+}
+
+
+#menu li a {
+    color: rgb(5, 5, 5);
+    font-size: 16px;
+    padding: 7px 10px;
+    text-decoration: none;
+}
+
+#introducao h1 {
+    font-size: 16px;
+    top: 100px;
+    position: relative;
+}
+
+#introducao {
+    width: 100;
+    padding-left: 50px;
+    text-align: left;
+    color: rgba(7, 7, 7, 0.988);
+    display: flex;
+    justify-content: space-between;
+}
+
+#musica {
+    width: 20%;
+    height: 40%;
+    margin-left: 200PX;
+
+}
+
+#book {
+    position: relative;
+    width: 450px;
+    height: auto;
+    margin-left: 300PX;
+
+}
+
+#footer.row {
+    width: 100%;
+}
+
+#row-cinza-claro {
+    height: 200px;
+    background-color: rgb(28, 22, 37);
+}
+
+#row-cinza-escuro {
+    height: 60px;
+    background-color: rgb(49, 48, 48);
+    border-top: #2974e4 1px solid;
+
+}
+
+#text-roxo {
+    color: rgb(234, 227, 241);
+    font-family: 'opensans';
+    font-weight: bold;
+    font-size: 14px;
+    justify-content: space-between;
+    display: flex;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+footer .col-red {
+    height: 200px;
+}
+
+#img-musica {
+    width: 65%;
+    height: 70%;
+}
+
+footer .col-sobre-nos h5 {
+    color: rgb(234, 227, 241);
+    font-family: 'opensans';
+    font-size: 16px;
+}
+
+footer .col-sobre-nos h4 {
+    color: #9ec5fe;
+    font-family: 'opensans';
+    font-size: 18px;
+    padding-bottom: 10px;
+    margin-top: 30px;
+}
+
+footer .col-parceiros h4 {
+    color:#9ec5fe;
+    font-family: 'opensans';
+    font-size: 18px;
+    padding-bottom: 10px;
+    margin-top: 30px;
+}
+footer .col-parceiros h5 {
+    color: rgb(234, 227, 241);
+    font-family: 'opensans';
+    font-size: 16px;
+}
+footer .col-ajuda h4 {
+    color:#9ec5fe;
+    font-family: 'opensans';
+    font-size: 18px;
+    padding-bottom: 10px;
+    margin-top: 30px;
+}
+footer .col-ajuda h5 {
+    color: rgb(234, 227, 241);
+    font-family: 'opensans';
+    font-size: 16px;
 }
