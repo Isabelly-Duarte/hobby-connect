@@ -1,0 +1,34 @@
+@font-face {
+    font-family: 'opensans';
+    src: url("../fonts/opensans/OpenSans-Italic-VariableFont_wdth,wght.ttf");
+    font-size: 1em;
+}
+
+body {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 96vh;
+    background-color: #f4e4eb;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
+
+input {
+    height: 40px;
+    width: 300px;
+}
+
+.input {
+    background-color: #dee8f6;
+}
+.button{
+   background-color:#9ec5fe ; 
+   color:white ;
+}

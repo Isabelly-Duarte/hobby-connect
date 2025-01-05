@@ -1,0 +1,38 @@
+/*Tamanho padrao para tabletes*/
+@media only screen and (max-width: 768px) {}
+
+/*tamanho padrao para smartphones*/
+@media only screen and (max-width: 480px) {
+    #menu {
+        display: none;
+
+    }
+    #logotipo{
+        left: 50%;
+    }
+
+    header #logotipo {
+        position: relative;
+        width: 80px;
+        height: 100px;
+        margin-top: 20px;
+    }
+    
+    #introducao {
+        flex-direction: column;
+        padding: 0;
+        padding-top: 20%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    #introducao h1 {
+        font-size:10px;
+        top: 0px;
+    }
+
+    #book {
+        margin: 0;
+        width: 100%;
+    }
+}
