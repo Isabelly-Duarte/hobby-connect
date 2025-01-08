@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'opensans';
+    src: url("../fonts/opensans/OpenSans-Italic-VariableFont_wdth,wght.ttf");
+    font-size: 1em;
+}
+
+ header{
+    width: 100%;
+    height: 100px;
+    background-color: #9ec5fe;
+}
+#vertical {
+    width: 150px;
+    height: 100vh;
+    background-color: #9ec5fe;   
+}
